@@ -68,9 +68,15 @@ GEM
       tzinfo (~> 2.0)
     addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)
+    autoprefixer-rails (10.4.2.0)
+      execjs (~> 2)
+    bcrypt (3.1.16)
     bindex (0.8.1)
     bootsnap (1.10.3)
       msgpack (~> 1.2)
+    bootstrap-sass (3.4.1)
+      autoprefixer-rails (>= 5.2.1)
+      sassc (>= 2.0.0)
     builder (3.2.4)
     capybara (3.36.0)
       addressable
@@ -89,6 +95,8 @@ GEM
       reline (>= 0.2.7)
     digest (3.1.0)
     erubi (1.10.0)
+    execjs (2.8.1)
+    ffi (1.15.5)
     globalid (1.0.0)
       activesupport (>= 5.0)
     i18n (1.9.1)
@@ -112,6 +120,7 @@ GEM
     matrix (0.4.2)
     method_source (1.0.0)
     mini_mime (1.1.2)
+    mini_portile2 (2.7.1)
     minitest (5.15.0)
     msgpack (1.4.4)
     net-imap (0.2.3)
@@ -130,6 +139,9 @@ GEM
       net-protocol
       timeout
     nio4r (2.5.8)
+    nokogiri (1.13.1)
+      mini_portile2 (~> 2.7.0)
+      racc (~> 1.4)
     nokogiri (1.13.1-x86_64-darwin)
       racc (~> 1.4)
     public_suffix (4.0.6)
@@ -171,6 +183,8 @@ GEM
       io-console (~> 0.5)
     rexml (3.2.5)
     rubyzip (2.3.2)
+    sassc (2.4.0)
+      ffi (~> 1.9)
     selenium-webdriver (4.1.0)
       childprocess (>= 0.5, < 5.0)
       rexml (~> 3.2, >= 3.2.5)
@@ -210,10 +224,13 @@ GEM
     zeitwerk (2.5.4)
 
 PLATFORMS
+  ruby
   x86_64-darwin-18
 
 DEPENDENCIES
+  bcrypt (~> 3.1.7)
   bootsnap
+  bootstrap-sass (= 3.4.1)
   capybara
   debug
   importmap-rails
